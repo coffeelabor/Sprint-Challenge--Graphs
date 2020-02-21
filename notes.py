@@ -2,6 +2,7 @@
 ######Plan#########
 I need to figure out what the role of 'moving' is.  Im not sure if i can just skip that and transvers the maze withought actually moving.  I have to explore each room.  To start I just want to get through the rooms regardless of how long it takes
 
+How do the directions play into this?
 
 '''
 
@@ -11,9 +12,10 @@ I need to figure out if its going to be a DFT vs BFT and DFS vs DFT
 
 i need to at least get it to do one of the above through the smaller map
 
+
 Get it to work with one of the algos then optimize
 
-I think DFT would be the easiest to start tryig to make work.  
+I think DFT of DFS would be the easiest to start tryig to make work.  
 
     I will need to initialize the stack
     I will need to push the world into the stack

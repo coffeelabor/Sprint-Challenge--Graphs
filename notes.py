@@ -32,7 +32,7 @@ Player has a travel method
 I need to get the cyclic part figured out, I think thatll come into play here.
 
 
-
+Alright maybe a search isnt right.  Im going to try a dft
 '''
 
 '''

@@ -28,6 +28,42 @@ player = Player(world.starting_room)
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
 traversal_path = []
+been_there = []
+
+print("Heres a print statement")
+def __init__(self):
+    self.vertices = {}
+
+def add_vertex(self, vertex_id):    
+    self.vertices[vertex_id] = set()
+
+def get_neighbors(self, vertex_id):    
+    return self.vertices[vertex_id]
+
+def dft_map(self, starting_vertex):
+    # Create an empty stack
+    s = Stack()
+    print('stack: ', s)
+    # Push the starting vertex_id to the stack
+    s.push(starting_vertex)
+    # Create an empty set to store visited nodes
+    visited = set()
+    print('visited: ', visited)
+    # While the stack is not empty...
+    # print("BREAK DFT")
+    while s.size() > 0:
+        # Pop, the first vertex
+        v = s.pop()
+        # Check if its been visited
+        # if it has not been visited...
+        if v not in visited:
+            # Mark it as visited
+            print('visit:',v)
+            visited.add(v)
+            # The push all neighbors to the top of the stack
+            for neighbor in self.get_neighbors(v):
+                s.push(neighbor)
+
 
 def dfs_map(self, starting_vertex, destination_vertex):
     # Create an empty stack

@@ -33,6 +33,18 @@ I need to get the cyclic part figured out, I think thatll come into play here.
 
 
 Alright maybe a search isnt right.  Im going to try a dft
+
+New Plan:
+    use a dft to go through the maze, the use a bft when you hit a room with >2 exits.
+    I need to find a way to save the lentgh of the each of the routes until
+    the bft should stop when it hits a room with >2 exits
+    I need to save a path to the shortest 2 door room
+    might need to do a bfs?
+
+    the dft will continue down the shortest path and repeat the process.
+    
+    I might need a way to backtrack, I dont think it fits with my plan but brady talked about it  
+
 '''
 
 '''
@@ -196,11 +208,11 @@ def bfs(self, starting_vertex, destination_vertex):
     # # Create an empty set to store visited nodes
     visited = set()
     # While the queue is not empty...
-    counter = 0
+    # counter = 0
     print("BREAK BFS")
     while q.size() > 0:
-        counter += 1
-        print(counter)
+        # counter += 1
+        # print(counter)
         # Dequeue, the first PATH
         path = q.dequeue()
         # GRAB THE LAST VERTEX FROM THE PATH
